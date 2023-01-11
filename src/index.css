@@ -13,11 +13,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --primary-text: deepskyblue;
+  --primary-background: antiquewhite;
+}
 a{
   text-decoration: none;
-  color: deepskyblue
+  color: var(--primary-text)
 }
-
+h4{
+  color: var(--primary-text);
+}
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +49,7 @@ a{
   }
 }
 .block{
-  background-color: antiquewhite;
+  background-color: var(--primary-background);
   padding: 1rem;
   margin: 0.25rem;
   border-radius: 0.5rem;
