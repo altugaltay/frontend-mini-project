@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import Product from '../Product/Product';
 import axios from 'axios';
 
 function Main() {
@@ -24,7 +25,7 @@ useEffect(() => {
         {loading && <h4>Loading...</h4>}
         {!loading && (
         <div className='row'>
-        {data.products.map(item => (<li key={item.id}>{item.title}</li>))}
+        {data.products.map(product => (<Product key={product.id} product={product} ></Product>))}
         </div>
     )}
     </div>

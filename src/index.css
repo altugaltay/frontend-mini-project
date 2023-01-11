@@ -16,13 +16,45 @@ code {
 :root {
   --primary-text: deepskyblue;
   --primary-background: antiquewhite;
+  --secondary-text: firebrick;
 }
 a{
   text-decoration: none;
   color: var(--primary-text)
 }
+img.small{
+  height: 8rem;
+  width: 10rem;
+  border-radius: 0.75rem;
+}
+button{
+  padding: 0.4rem;
+  border: 0.1rem solid lightsteelblue;
+  background-color: mistyrose;
+  border-radius: 0.75rem;
+  width: 80%;
+  cursor:pointer;
+  color: red;
+  font-weight: 700;
+  margin-top: 1rem;
+  position:absolute;
+  bottom: 0.5rem;
+
+}
 h4{
   color: var(--primary-text);
+}
+h5{
+  color: var(--secondary-text);
+  max-width: 10rem;
+}
+.card{
+  background-color: ivory;
+  padding: 1rem;
+  margin:0.5rem;
+  border-radius: 0.75rem;
+  height: 20rem;
+  position: relative;
 }
 .row{
   display: flex;
@@ -54,3 +86,4 @@ h4{
   margin: 0.25rem;
   border-radius: 0.5rem;
 }
+
