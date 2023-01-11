@@ -24,16 +24,48 @@ useEffect(() => {
   }, []);
 
   const {products} = data;
+  /**
+   * 
+   * @param {*} product 
+   * @description method to handle item addition
+   * 
+   */
   const onAdd = (product) => {
-    console.log("onAdd");
+    const exist = cartItems.find((x) => x.id === product.id);
+    if(exist){
+      const newCartItems = cartItems.map((x) => 
+      x.id === product.id ? {...exist, quantity: exist.quantity +1} : x
+      );
+      setCartItems(newCartItems);
+    }
+    else{
+      const newCartItems = [...cartItems,{...product, quantity: 1}];
+      setCartItems(newCartItems);
+    }
   };
-  const onRemove = (product) => {};
-
+  /**
+   * 
+   * @param {*} product 
+   * @description method to handle item remove
+   */
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if(exist.quantity === 1){
+      const newCartItems = cartItems.filter((x) => x.id !== product.id);
+      setCartItems(newCartItems);
+    }
+    else{
+      const newCartItems = cartItems.map((x) => 
+      x.id === product.id ? {...exist, quantity: exist.quantity - 1 } : x
+      );
+      setCartItems(newCartItems);
+    }
+  };
   return (
     <div>
-      <Header/>
+      <Header countCartItems = {cartItems.length}/>
       <div className="row">
-        <Main onAdd={onAdd} onRemove={onRemove} products={products} state={loading}/>
+        <Main cartItems ={cartItems} onAdd={onAdd} onRemove={onRemove} products={products} state={loading}/>
         <Basket/>
       </div>
     </div>

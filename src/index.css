@@ -32,14 +32,40 @@ button{
   border: 0.1rem solid lightsteelblue;
   background-color: mistyrose;
   border-radius: 0.75rem;
-  width: 80%;
+  width: 110%;
   cursor:pointer;
   color: red;
   font-weight: 700;
   margin-top: 1rem;
+
+}
+button.add{
+  background-color: aqua;
+  width: 1.5rem;
+}
+button.remove{
+  background-color: brown;
+  width: 1.5rem;
+}
+.p-1{
+  padding: 1rem;
+}
+.cardFooter{
   position:absolute;
   bottom: 0.5rem;
-
+  margin-left: 1.75rem;
+}
+.badge{
+  background-color: red;
+  border-radius: 0.75rem;
+  color:red;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center; /* Centering Horizantly */
+  align-items: center; /* Centering Vertically */
+  background-color: ivory;
+  font-weight: 600;
+  
 }
 h4{
   color: var(--primary-text);
