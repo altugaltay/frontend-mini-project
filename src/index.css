@@ -51,6 +51,20 @@ button.remove{
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+h3{
+  color: var(--primary-text);
+  font-weight: 700;
+}
+h4{
+  color: var(--primary-text);
+}
+h5{
+  color: var(--primary-text);
+  max-width: 10rem;
+}
+p{
+  color:white;
+}
 .p-1{
   padding: 1rem;
 }
@@ -72,17 +86,7 @@ button.remove{
   margin-top: -1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-h3{
-  color: var(--primary-text);
-  font-weight: 700;
-}
-h4{
-  color: var(--primary-text);
-}
-h5{
-  color: var(--primary-text);
-  max-width: 10rem;
-}
+
 .card{
   /* background-color: ivory; */
   padding: 1rem;
