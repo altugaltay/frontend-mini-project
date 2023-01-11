@@ -8,11 +8,12 @@ function Header(props) {
             <a href='#/'><h3>Product Listing and Shoping Cart</h3></a>
         </div>
         <div>
-            <a href='#/cart'>Cart
+            <a href='#/cart'><h4>Cart</h4>
+
+            </a>
             {countCartItems ? (
                 <div className='badge'>{countCartItems}</div>
             ):('')}
-            </a>
         </div>
     </div>
   )

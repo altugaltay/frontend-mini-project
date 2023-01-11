@@ -26,6 +26,7 @@ img.small{
   height: 8rem;
   width: 10rem;
   border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 button{
   padding: 0.4rem;
@@ -33,11 +34,11 @@ button{
   background-color: mistyrose;
   border-radius: 0.75rem;
   width: 110%;
-  cursor:pointer;
+  
   color: red;
   font-weight: 700;
   margin-top: 1rem;
-
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 button.add{
   background-color: aqua;
@@ -54,9 +55,9 @@ button.remove{
   position:absolute;
   bottom: 0.5rem;
   margin-left: 1.75rem;
+  cursor:pointer;
 }
 .badge{
-  background-color: red;
   border-radius: 0.75rem;
   color:red;
   width: 1.5rem;
@@ -65,7 +66,8 @@ button.remove{
   align-items: center; /* Centering Vertically */
   background-color: ivory;
   font-weight: 600;
-  
+  margin-top: -1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 h4{
   color: var(--primary-text);
@@ -81,6 +83,7 @@ h5{
   border-radius: 0.75rem;
   height: 20rem;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .row{
   display: flex;
