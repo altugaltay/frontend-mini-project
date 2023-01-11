@@ -3,7 +3,7 @@ import React from 'react'
 function Header(props) {
     const {countCartItems} = props;
   return (
-    <div className='row center block'>
+    <div className='row center block spectrum-background'>
         <div>
             <a href='#/'><h3>Product Listing and Shoping Cart</h3></a>
         </div>

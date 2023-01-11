@@ -3,7 +3,7 @@ import React from 'react'
 function Product(props) {   
 const {product, onAdd, onRemove, item} = props;
   return (
-    <div className='card'>
+    <div className='card spectrum-background-card'>
         <img className='small' src={product.thumbnail} alt={product.title}></img>
         <h5>{product.title}</h5>
         <div>${product.price}</div>

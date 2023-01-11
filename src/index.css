@@ -14,8 +14,7 @@ code {
     monospace;
 }
 :root {
-  --primary-text: deepskyblue;
-  --primary-background: antiquewhite;
+  --primary-text: white;
   --secondary-text: firebrick;
 }
 a{
@@ -41,12 +40,16 @@ button{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 button.add{
-  background-color: aqua;
-  width: 1.5rem;
+  background-color: lightsteelblue;
+  width: 2rem;
+  color:black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 button.remove{
-  background-color: brown;
-  width: 1.5rem;
+  background-color: bisque;
+  width: 2rem;
+  color: black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .p-1{
   padding: 1rem;
@@ -62,22 +65,26 @@ button.remove{
   color:red;
   width: 1.5rem;
   display: flex;
-  justify-content: center; /* Centering Horizantly */
-  align-items: center; /* Centering Vertically */
+  justify-content: center;
+  align-items: center;
   background-color: ivory;
   font-weight: 600;
   margin-top: -1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+h3{
+  color: var(--primary-text);
+  font-weight: 700;
+}
 h4{
   color: var(--primary-text);
 }
 h5{
-  color: var(--secondary-text);
+  color: var(--primary-text);
   max-width: 10rem;
 }
 .card{
-  background-color: ivory;
+  /* background-color: ivory; */
   padding: 1rem;
   margin:0.5rem;
   border-radius: 0.75rem;
@@ -110,9 +117,22 @@ h5{
   }
 }
 .block{
-  background-color: var(--primary-background);
   padding: 1rem;
   margin: 0.25rem;
   border-radius: 0.5rem;
 }
+.spectrum-background {
+  background:
+      linear-gradient(cornflowerblue, transparent),
+      linear-gradient(to top left, dodgerblue, transparent),
+      linear-gradient(to top right,darkblue , transparent);
+  background-blend-mode: screen;
+}
 
+.spectrum-background-card {
+  background:
+      linear-gradient(lightpink, transparent),
+      linear-gradient(to top left, crimson, transparent),
+      linear-gradient(to top right,firebrick , transparent);
+  background-blend-mode: screen;
+}
