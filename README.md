@@ -13,4 +13,10 @@
     3. create main component:
         a- fetch data
         b- render product items
+
+    4. creta Product Component
+        a- create product divs
+        b- pass props to product component
     
+    5. implement cart
+        a- add and remove items from the cart
