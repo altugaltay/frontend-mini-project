@@ -1,7 +1,10 @@
 import Product from '../Product/Product';
 import { useState } from 'react';
-
-
+/**
+ * 
+ * @param {*} props 
+ * @description Filtering processes of the products and sending the data to the product component are provided.
+ */
 function Main(props) {
     const {products, onAdd, onRemove, state, cartItems} = props;
     const[query, setQuery] = useState("");
@@ -18,5 +21,4 @@ function Main(props) {
     </div>
   )
 }
-
 export default Main

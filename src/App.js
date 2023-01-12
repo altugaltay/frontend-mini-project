@@ -22,7 +22,6 @@ useEffect(() => {
 
     fetchData();
   }, []);
-
   const {products} = data;
   /**
    * 

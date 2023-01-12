@@ -1,5 +1,9 @@
 import React from 'react'
-
+/**
+ * 
+ * @param {*} props 
+ * @description Showing how many different products have been added to the cart
+ */
 function Header(props) {
     const {countCartItems} = props;
   return (
@@ -18,5 +22,4 @@ function Header(props) {
     </div>
   )
 }
-
 export default Header

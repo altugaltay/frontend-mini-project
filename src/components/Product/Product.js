@@ -1,5 +1,9 @@
 import React from 'react'
-
+/**
+ * 
+ * @param {*} props 
+ * @description The data from the main component is placed inside the cards.
+ */
 function Product(props) {   
 const {product, onAdd, onRemove, item} = props;
   return (
@@ -19,5 +23,4 @@ const {product, onAdd, onRemove, item} = props;
     </div>
   )
 }
-
 export default Product

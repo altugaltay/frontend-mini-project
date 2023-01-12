@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-
+/**
+ * 
+ * @param {*} props 
+ * @description Listing the products added to the basket, removing them from the basket, cleaning the basket and checkout process are provided.
+ */
 function Basket(props) {
   const [formData, setFormData] = useState({
     name: "",
@@ -105,7 +109,6 @@ function Basket(props) {
                   <label>
                     Shipping:
                     <select name='shipping' onChange={(e) => handleChange(e)} className='right'>
-
                       {DropdownItems.map((item, index) => {
                         return (
                           <option key={index} value={formData.shipping}>{item}</option>
@@ -117,7 +120,6 @@ function Basket(props) {
                 <div className='col-1'>
                   <button type='submit' className='checkout-color'>Checkout</button>
                 </div>
-
               </form>
             </div>
           </>
@@ -126,5 +128,4 @@ function Basket(props) {
     </aside>
   )
 }
-
 export default Basket
