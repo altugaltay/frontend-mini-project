@@ -16,7 +16,7 @@ function Basket(props) {
             <button onClick={()=>onRemove(item)} className='remove'>-</button>
             <button onClick={()=>onAdd(item)} className='add'>+</button>
             </div>
-            <div className='col-1 text-right'>
+            <div className='col-1 text-right right'>
               <p>{item.quantity} x {item.price}</p>
             </div>
           </div>
@@ -26,14 +26,14 @@ function Basket(props) {
           <hr/>
           <div className='row'>
             <div className='col-2'><p>Items Price</p></div>
-            <div className='col-1 text-right'><p>${itemsPrice}</p></div>
+            <div className='col-1 text-right right'><p>${itemsPrice}</p></div>
           </div>
           <hr/>
           <div className='row'>
             <div className='col-2'>
               <p>Total Price</p>
             </div>
-            <div className='col-1 text-right'>
+            <div className='col-1 text-right right'>
               <p>${totalPrice}</p>
             </div>
 

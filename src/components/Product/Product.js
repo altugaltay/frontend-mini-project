@@ -5,7 +5,7 @@ const {product, onAdd, onRemove, item} = props;
   return (
     <div className='card spectrum-background-card'>
         <img className='small' src={product.thumbnail} alt={product.title}></img>
-        <h5>{product.title}</h5>
+        <p className='bold'>{product.title}</p>
         <p>${product.price}</p>
         <div className='cardFooter'>
             {item ? (
