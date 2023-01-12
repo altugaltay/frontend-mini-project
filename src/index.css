@@ -21,6 +21,9 @@ a{
   text-decoration: none;
   color: var(--primary-text)
 }
+input:focus{
+  outline: none !important;
+}
 img.small{
   height: 8rem;
   width: 10rem;
@@ -124,6 +127,7 @@ p{
   padding: 1rem;
   margin: 0.25rem;
   border-radius: 0.5rem;
+  position: relative;
 }
 .spectrum-background {
   background:
@@ -146,5 +150,17 @@ p{
 }
 .checkout-color{
   color: darkgreen;
+}
+
+.search{
+  height: 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  position: absolute;
+  right: 1rem;
+  margin-top: -2.5rem;
+  padding: 0.5rem;
+  border-width: 0rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 

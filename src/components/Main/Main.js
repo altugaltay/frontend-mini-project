@@ -1,15 +1,18 @@
 import Product from '../Product/Product';
+import { useState } from 'react';
 
 
 function Main(props) {
     const {products, onAdd, onRemove, state, cartItems} = props;
+    const[query, setQuery] = useState("");
   return (
     <div className='block col-2 spectrum-background'>
-        <h4>Products</h4>
+        <h3>Products</h3>
+        <input className='search' type={'text'} placeholder={'Search...'} onChange ={(e) => setQuery(e.target.value)}></input>
         {state && <h4>Loading...</h4>}
         {!state && (
         <div className='row'>
-        {products.map(product => (<Product item={cartItems.find((x) => x.id ===product.id)}  onAdd={onAdd} onRemove={onRemove} key={product.id} product={product} ></Product>))}
+        {products.filter(product=>product.title.toLowerCase().includes(query)).map(product => (<Product item={cartItems.find((x) => x.id ===product.id)}  onAdd={onAdd} onRemove={onRemove} key={product.id} product={product} ></Product>))}
         </div>
     )}
     </div>
