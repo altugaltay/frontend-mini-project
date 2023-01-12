@@ -26,3 +26,6 @@
         b- calculate total price
         c- clear button
         d- checkout button
+
+    7. save cart items in local storage
+        a- use useEffect to get items in local storage
