@@ -32,3 +32,7 @@
     
     8. create searching input
         a- use filter method
+    
+    9. implement a checkout process
+        a- add personal informations form
+        b- add functionality checkout button

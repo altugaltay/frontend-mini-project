@@ -14,8 +14,22 @@ code {
     monospace;
 }
 :root {
-  --primary-text: white;
+  --primary-text: black;
   --secondary-text: firebrick;
+}
+form{
+  margin-top: 1rem;
+  color: var(--primary-text);
+  font-size: 1.25rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.input-shape{
+  height: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 a{
   text-decoration: none;
@@ -30,17 +44,22 @@ img.small{
   border-radius: 0.75rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+select{
+  border-radius: 0.75rem;
+}
 button{
   padding: 0.4rem;
   border: 0.1rem solid lightsteelblue;
-  background-color: mistyrose;
+  background-color: #F8EDE3;
   border-radius: 0.75rem;
   width: 110%;
-  
-  color: red;
+  color: #85586F;
   font-weight: 700;
   margin-top: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+button:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 button.add{
   background-color: lightsteelblue;
@@ -48,30 +67,37 @@ button.add{
   color:black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+button.add:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 button.remove{
   background-color: bisque;
   width: 2rem;
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+button.remove:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 h3{
   color: var(--primary-text);
   font-weight: 700;
-  font-family: cursive;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 h4{
   color: var(--primary-text);
-  font-family: cursive;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 h5{
   color: var(--primary-text);
   max-width: 10rem;
-  font-family: cursive;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 p{
-  color:white;
+  color:var(--primary-text);
   font-family: cursive;
   max-width: 10rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 .p-1{
   padding: 1rem;
@@ -84,7 +110,7 @@ p{
 }
 .badge{
   border-radius: 0.75rem;
-  color:red;
+  color:#85586F;
   width: 1.5rem;
   display: flex;
   justify-content: center;
@@ -96,13 +122,15 @@ p{
 }
 
 .card{
-  /* background-color: ivory; */
   padding: 1rem;
   margin:0.5rem;
   border-radius: 0.75rem;
   height: 20rem;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 .row{
   display: flex;
@@ -136,15 +164,15 @@ p{
 }
 .spectrum-background {
   background:
-      linear-gradient(cornflowerblue, transparent),
-      linear-gradient(to top left, dodgerblue, transparent),
-      linear-gradient(to top right,darkblue , transparent);
+      linear-gradient(#F8EDE3, transparent),
+      linear-gradient(to top left, #DFD3C3, transparent),
+      linear-gradient(to top right,#D0B8A8, transparent);
   background-blend-mode: screen;
 }
 .spectrum-background-card {
   background:
-      linear-gradient(lightpink, transparent),
-      linear-gradient(to top left, crimson, transparent),
+      linear-gradient(#85586F, transparent),
+      linear-gradient(to top left, #D0B8A8, transparent),
       linear-gradient(to top right,firebrick , transparent);
   background-blend-mode: screen;
 }
@@ -153,6 +181,10 @@ p{
 }
 .checkout-color{
   color: darkgreen;
+  width: 100%;
+}
+.clear-color{
+  color:red;
 }
 .search{
   height: 2rem;
@@ -174,3 +206,4 @@ p{
   position: absolute;
   right: 1rem;
 }
+
