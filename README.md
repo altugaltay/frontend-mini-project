@@ -38,3 +38,4 @@
         b- add functionality checkout button
     
     10. deploy the project
+        a- https://altugaltay.github.io/frontend-mini-project/
