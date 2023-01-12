@@ -140,3 +140,11 @@ p{
       linear-gradient(to top right,firebrick , transparent);
   background-blend-mode: screen;
 }
+
+.text-right{
+  text-align: right;
+}
+.checkout-color{
+  color: darkgreen;
+}
+

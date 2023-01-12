@@ -20,3 +20,9 @@
     
     5. implement cart
         a- add and remove items from the cart
+
+    6. create basket component
+        a- list items in the basket
+        b- calculate total price
+        c- clear button
+        d- checkout button

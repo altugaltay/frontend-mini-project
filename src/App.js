@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 function App() {
-const [cartItems,setCartItems] = useState([]);
+let [cartItems,setCartItems] = useState([]);
 const [loading, setLoading] = useState(true);
 const [data, setData] = useState([]);
 useEffect(() => {
@@ -31,7 +31,7 @@ useEffect(() => {
    * 
    */
   const onAdd = (product) => {
-    const exist = cartItems.find((x) => x.id === product.id);
+    let exist = cartItems.find((x) => x.id === product.id);
     if(exist){
       const newCartItems = cartItems.map((x) => 
       x.id === product.id ? {...exist, quantity: exist.quantity +1} : x
@@ -61,12 +61,19 @@ useEffect(() => {
       setCartItems(newCartItems);
     }
   };
+  /**
+   * @description method to handle clear cart
+   */
+  const clearCart = () =>{
+    cartItems = [];
+    setCartItems(cartItems);
+  }
   return (
     <div>
       <Header countCartItems = {cartItems.length}/>
       <div className="row">
         <Main cartItems ={cartItems} onAdd={onAdd} onRemove={onRemove} products={products} state={loading}/>
-        <Basket/>
+        <Basket cartItems ={cartItems} onAdd={onAdd} onRemove={onRemove} clearCart={clearCart}/>
       </div>
     </div>
   );
