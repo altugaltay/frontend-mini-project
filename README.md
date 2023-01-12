@@ -36,3 +36,5 @@
     9. implement a checkout process
         a- add personal informations form
         b- add functionality checkout button
+    
+    10. deploy the project
