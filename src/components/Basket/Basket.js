@@ -17,6 +17,9 @@ function Basket(props) {
   const totalPrice = itemsPrice;
   const handleSubmit = event => {
     event.preventDefault();
+    console.log({
+      formData
+    })
     setFormData({
       name: "",
       surname: "",
@@ -108,10 +111,10 @@ function Basket(props) {
                 <div className='col-1'>
                   <label>
                     Shipping:
-                    <select name='shipping' onChange={(e) => handleChange(e)} className='right'>
+                    <select name='shipping' onChange={(e) => handleChange(e)} value={formData.shipping} className='right'>
                       {DropdownItems.map((item, index) => {
                         return (
-                          <option key={index} value={formData.shipping}>{item}</option>
+                          <option key={index}>{item}</option>
                         )
                       })}
                     </select>
